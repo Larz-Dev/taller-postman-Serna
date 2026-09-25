@@ -82,52 +82,31 @@ Si, pues se esperaba que la respuesta hubiese sido un error 4xx ya que el client
 | 4     | Ha retornado el mismo elemento enviado junto al id asignado en la base de datos luego de almacenarlo. | 101 | 201 - Created |
 | 5     | Ha retornado el mismo elemento enviado junto al id asignado en la base de datos luego de almacenarlo. | 101 | 201 - Created |
 
-
-
 ### ¿Qué observaste?
-
-
 
 La respuesta del servidor es siempre la misma, y el id del elemento tambien se repite
 
-
 ### ¿Por qué crees que ocurre eso?
-
-
 
 Se debe a que es una API de prueba y esta solo simula que llegó la información correctamente, mas no la escribe o almacena en una base de datos real para luego ser consultada.
 
-
 ### ¿Cómo comprobarías, en una API real, que el recurso se creó de verdad?
-
 
 Usando la ruta de consulta en este caso ( GET /posts/101 ) o revisando la base de datos
 
-
 ## La diferencia entre PUT y PATCH
 
-
-
 ### ¿Qué diferencia encontraste entre ambas respuestas?
-
-
 
 Al realizar la petición con PUT se sobreescribió solo el valor indicado "title" y dió como respuesta unicamente el valor modificado junto a su id del elemento, pero esto significaria (Dependiendo del desarrollo del servidor) que no podria pasar nada con los demas valores o se remplazarian por campos vacios.
 
 Al realizar la petición con PATCH PUT se sobreescribió solo el valor indicado "title" y dió como respuesta todos los valores del elemento pero solo con "title" modificado, esto asegura que unicamente fue modificado el valor "title" sin tocar algun otro valor.
-
-
-
 
 | Métodos | Operación               | Función                                              |
 | -------- | ------------------------ | ----------------------------------------------------- |
 | PUT      | Actualizarción completa | Actualiza o sobreescribe un recurso completo          |
 | PATCH    | Actualizarción parcial  | Actualiza o sobreescribe unicamente recuros indicados |
 
-
-
 ### ¿Cuál usarías para corregir un error de escritura en un solo campo, y por qué?
-
-
 
 PATCH, pues quiero asegurarme que no voy a modificar o remplazar algo mas, solo el valor que quiero.
