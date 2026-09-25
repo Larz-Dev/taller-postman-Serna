@@ -1,6 +1,6 @@
 # Taller de APIs y Postman
 
-**Estudi****ante:** Javier Andrés Serna Bañol
+**Estudiante:** Javier Andrés Serna Bañol
 
 **Asignatura:** Ingeniería de Software II — Cotecnova
 
