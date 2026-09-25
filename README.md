@@ -1,6 +1,9 @@
-# Taller Postman Serna
+# Taller de APIs y Postman
 
-Desarrollo de actividad - Ingeniería de Software II - Postman
+**Estudi****ante:** Javier Andrés Serna Bañol
+
+**Asignatura:** Ingeniería de Software II — Cotecnova
+
 
 ## Marco conceptual
 
