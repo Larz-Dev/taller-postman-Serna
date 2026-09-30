@@ -4,7 +4,6 @@
 
 **Asignatura:** Ingeniería de Software II — Cotecnova
 
-
 ## Marco conceptual
 
 ### ¿Qué es una API REST?
@@ -46,10 +45,10 @@ Una API es un grupo de protocolos que se usa para crear e integrar sistemas de s
 | 1 | GET /posts/1    | 2xx              | 200              | Sí         |
 | 2 | GET /posts      | 2xx              | 200              | Sí         |
 | 3 | GET /posts/9999 | 4xx              | 404              | Sí         |
-| 4 | POST /posts     | 4xx              |                  |             |
-| 5 | PUT /posts/1    | 4xx              |                  |             |
-| 6 | PATCH /posts/1  | 4xx              |                  |             |
-| 7 | DELETE /posts/1 | 2xx              |                  |             |
+| 4 | POST /posts     | 4xx              | 404              | Sí         |
+| 5 | PUT /posts/1    | 4xx              | 404              | Sí         |
+| 6 | PATCH /posts/1  | 4xx              | 404              | Sí         |
+| 7 | DELETE /posts/1 | 2xx              | 200              | Sí         |
 
 Luego de realizar las peticiones 1 y 2 he obtenido lo siguiente:
 
